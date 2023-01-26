@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String s = inputText.getText().toString();
                 double n = Double.parseDouble(s);
-                displayText.setText(n + " Fahrenheit is " +  (n-32) * (5.0/9) + " Celsius: ");
+                displayText.setText(n + " Celsius is " +  (n * (9.0/5) + 32) + " Fahreinheit ");
             }
         });
 
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String s = inputText.getText().toString();
                 double n = Double.parseDouble(s);
-                displayText.setText(n + " Celsius is " +  (n-32) * (5.0/9) + " Fahreinheit: ");
+                displayText.setText(n + " Fahrenheit is " +  (n-32) * (5.0/9) + " Celsius ");
             }
         });
 
